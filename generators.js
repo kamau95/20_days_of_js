@@ -24,3 +24,16 @@ for(let value of numbers) {
 
 let sequence = [0, ...printNumbers()];
 console.log(sequence);
+
+//we can use generators to make an object iterable
+const myIterable = {
+  data: [109, 12, 23, 0, 67],
+  *[Symbol.iterator]() {
+    for(let item of this.data) {
+      yield item;
+    }
+  }
+}
+let iterable = myIterable[Symbol.iterator]();
+console.log(...iterable);
+
