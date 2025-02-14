@@ -39,3 +39,21 @@ let proxy1 = new Proxy(user1, {
 });
 console.log(Object.keys(proxy1));
 
+//checking presence using has trap
+let user2 = {
+  username: 'anonymous',
+  _secret: 'Some secret that should remain hidden.'
+}
+
+let proxy2 = new Proxy(user2, {
+  has(target, prop) {
+    if (prop == "private") {
+      return false;
+    } else {
+      return prop in target
+    }
+  }
+});
+
+console.log("username" in proxy2);
+console.log("age" in proxy2);
