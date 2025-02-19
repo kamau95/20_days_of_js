@@ -1,0 +1,12 @@
+table {
+    border-spacing: 5px; /* Adds space between column borders */
+    margin: auto;
+    width: 50%;
+}
+
+td {
+    border: 1px solid black; /* Creates the border */
+    padding: 10px;
+    text-align: center;
+}
+
