@@ -1,0 +1,6 @@
+.scroll-container {
+  max-width: 100px;
+  max-height: 50px;
+  overflow-y: auto;
+  border: 1px solid black;
+}

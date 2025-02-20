@@ -15,3 +15,11 @@ body.addEventListener('click', (e) =>{
 button.addEventListener('click', (e) =>{
   console.log("the source of click", e.eventPhase);
 });
+
+//scroll event
+window.addEventListener('scroll', (e) => {
+  console.log('window has been scrolled');
+})
+document.querySelector('.scroll-container').addEventListener('scroll', (e) => {
+  console.log('scrolled container');
+})
