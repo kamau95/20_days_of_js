@@ -1,0 +1,20 @@
+#mybox {
+    background-color: lightgreen;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#fileList {
+    width: 400px;
+}
+
+#fileList li.selected {
+    background-color: #007BFF;
+    color: white;
+}
